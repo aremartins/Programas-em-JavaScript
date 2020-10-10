@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo Aposentadoria</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Calculo Aposentadoria</h1>
+    </header>
+    <section>
+        <div>
+            <p>Digite o ano de nascimento: 
+                <input type="number" name="txtano" id="txtano" min="1910" max="2020">
+            </p>
+            
+
+            <p>Sexo:
+                <input type="radio" name="radsex" id="masc" checked>
+                <label for="masc">Masculino</label>
+                <input type="radio" name="radsex" id="fem">
+                <label for="fem">Feminino</label>
+            </p>
+
+            <p>Tempo de contribuição:
+                <input type="number" name='txttempo' id='tempo'>
+            </p>
+
+            <p>
+                <input type="button" value="verificar" onclick="verificar()">
+            </p>        
+        </div>
+
+        <div id= "res">
+           Preencha os dados acima para ver o resultado!
+        </div>
+            
+        </div>
+        <div id= "foto">
+            
+        </div>
+
+        
+
+    </section>
+    <footer>
+        <p>&copy; Aretha Martins </p>
+    </footer>
+    <script src="scripts.js"></script>
+    
+</body>
+</html>
