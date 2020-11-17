@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+</head>
+<style>
+    header {
+        font: normal 25pt Arial;
+        color: white;
+        background: black;
+        margin-bottom: 80px;
+        padding:10px;
+        text-align: center;
+    }
+    body {
+        font: normal 18pt Arial;
+        color: white; 
+        background-color: beige;       
+    }
+    div#area {
+        font: normal 18pt Arial;
+        background: red;
+        color: white;
+        width:250px;
+        height: 250px;
+        line-height: 250px;
+        text-align: center;
+        margin-left: 400px;
+    }
+    p {
+        color: red;
+        text-align: center;
+    }
+</style>
+<body>
+    <header>
+        <h1>Interaja com o cubo</h1>
+    </header>
+    <p> Interação com usuário usando disparos de eventos do mouse no HTML</p>
+    <div id="area">
+        Interaja
+    </div>
+    <script>
+        let cubo = document.getElementById('area')
+        cubo.addEventListener('click', clicar)
+        cubo.addEventListener('mouseenter', entrar)
+        cubo.addEventListener('mouseout', sair)
+        function clicar() {
+            cubo.innerHTML = '<strong>Clicou</strong>'
+            cubo.style.background = 'black'
+            cubo.style.color = 'red'
+
+        }
+        function entrar() {
+            cubo.innerHTML = '<strong>Entrou</strong>'
+        }
+        /*function mover() {
+            cubo.innerHTML = 'Movendo...'
+        }*/
+        function sair() {
+            cubo.innerHTML = '<strong>Saiu</strong>'
+            cubo.style.background  = 'red'
+            cubo.style.color = 'white'
+        }
+    </script>
+
+    
+</body>
+</html>
