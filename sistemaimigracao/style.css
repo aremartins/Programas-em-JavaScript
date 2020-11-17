@@ -1,0 +1,38 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+header {
+    background: green;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+
+}
+
+body {
+    background: beige;
+    font: normal 18pt Arial;
+    text-align: center;
+}
+
+input {
+    width:100px;
+    font: normal 18pt Arial;
+}
+
+input#btn {
+    background:orange;
+    color: white;
+    font: normal 15pt Arial;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+input#btn:hover {
+    background: orangered;
+}
+
