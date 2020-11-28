@@ -1,0 +1,15 @@
+body{
+    font: normal 18pt Arial;
+    background: rgb(173, 221, 173)
+}
+input{
+    color:white;
+    background: rgb(238, 191, 103);
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+input:hover{
+    border: none;
+    background:rgb(223, 162, 50);
+}
