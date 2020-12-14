@@ -1,0 +1,44 @@
+<h1>Eventos do mouse e alterações de estilo pelo JavaScript</h1>
+
+<dl>
+    <dt>Evento Click</dt>
+    <dd>Esperando o usuário clicar em uma região para executar uma função</dd>
+    <dt>Evento mouseenter</dt>
+    <dd> Executa uma função quando o usuário entra com o cursor do mouse dentro de uma região</dd>
+    <dt> Evento mouseout</dt>
+    <dd> Executa uma função quando o cursor sai da região </dd>
+</dl>
+
+
+    <div class="box">Interaja</div>
+
+
+<script>
+    var boxElement = document.querySelector('.box')
+    boxElement.style.width = 300
+    boxElement.style.height = 300
+    boxElement.style.backgroundColor = 'red'
+    boxElement.addEventListener('click', clicar)
+    boxElement.addEventListener('mouseenter', entrar)
+    boxElement.addEventListener('mouseout', sair)
+
+    function clicar() {
+        boxElement.innerHTML = 'Clicou'
+        boxElement.style.backgroundColor = 'green'
+    }
+
+    function entrar() {
+        boxElement.innerHTML = 'Entrou'
+        boxElement.style.backgroundColor = 'blue'
+    }
+
+    function sair() {
+        boxElement.innerHTML = 'Saiu'
+        boxElement.style.backgroundColor = '#f00'
+    }
+
+
+    
+
+
+</script>
